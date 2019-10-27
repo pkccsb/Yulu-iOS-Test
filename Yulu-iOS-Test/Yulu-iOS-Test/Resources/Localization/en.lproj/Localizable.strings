@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Yulu-iOS-Test
+
+  Created by Praveen on 23/10/19.
+  Copyright © 2019 Praveen. All rights reserved.
+*/
+
+
+
+//General
+"general.appname" = "Yulu Bike";
+"general.ok" = "OK";
+"general.error" = "Error";
+"general.cancel" = "Cancel";
+"general.add" = "Add";
+"general.error.undefined" = "An error occurred. Check your internet connection and try again.";
+
+"general.pulltorefresh" = "Pull to refresh";
+
+"general.addPlace.confirmation" = "Are you sure you want to add place here?";

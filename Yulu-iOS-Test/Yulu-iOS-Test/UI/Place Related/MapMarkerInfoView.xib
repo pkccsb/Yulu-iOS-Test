@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapMarkerInfoView" customModule="Yulu_iOS_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Gyd-cw-zJc"/>
+                <outlet property="descriptionLabel" destination="oHv-LE-XhC" id="hY3-4K-2qG"/>
+                <outlet property="hDescriptionLabel" destination="aoX-S7-Jj6" id="mfQ-Ik-Dbg"/>
+                <outlet property="titleLabel" destination="BdR-hs-2P4" id="o2g-b8-72k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdR-hs-2P4">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="150"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQ4-ME-0NC">
+                    <rect key="frame" x="384" y="85" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="6ev-Zk-09G"/>
+                        <constraint firstAttribute="height" constant="30" id="810-YW-1Da"/>
+                    </constraints>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHv-LE-XhC">
+                    <rect key="frame" x="0.0" y="150" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="aoX-S7-Jj6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oHv-LE-XhC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="K97-9R-bUa"/>
+                <constraint firstItem="BdR-hs-2P4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O7Y-hR-weA"/>
+                <constraint firstAttribute="trailing" secondItem="yQ4-ME-0NC" secondAttribute="trailing" id="YhF-7o-bf8"/>
+                <constraint firstItem="oHv-LE-XhC" firstAttribute="top" secondItem="BdR-hs-2P4" secondAttribute="bottom" id="bMU-uR-dWc"/>
+                <constraint firstItem="BdR-hs-2P4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cct-ME-Jc9"/>
+                <constraint firstItem="yQ4-ME-0NC" firstAttribute="leading" secondItem="BdR-hs-2P4" secondAttribute="trailing" constant="10" id="d2E-IS-lOr"/>
+                <constraint firstAttribute="bottom" secondItem="oHv-LE-XhC" secondAttribute="bottom" id="fI7-3W-vms"/>
+                <constraint firstItem="yQ4-ME-0NC" firstAttribute="leading" secondItem="oHv-LE-XhC" secondAttribute="trailing" constant="10" id="fgc-gr-Xcb"/>
+                <constraint firstItem="yQ4-ME-0NC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gLY-6x-ubf"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="47.826086956521742" y="88.392857142857139"/>
+        </view>
+    </objects>
+</document>

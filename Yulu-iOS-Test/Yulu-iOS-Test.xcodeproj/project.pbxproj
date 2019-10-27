@@ -1,0 +1,917 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		220D802C35F5D60BE24CEE8A /* Pods_Yulu_iOS_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0856D52B0B392A6D43BA8815 /* Pods_Yulu_iOS_Test.framework */; };
+		281AE60823619BC1003D2BBB /* PlaceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE60723619BC1003D2BBB /* PlaceInfo.swift */; };
+		281AE60A2362F1CC003D2BBB /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE6092362F1CC003D2BBB /* Images.swift */; };
+		281AE60C2362F759003D2BBB /* PlacesOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE60B2362F759003D2BBB /* PlacesOnMapViewController.swift */; };
+		281AE60E2362F92F003D2BBB /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE60D2362F92F003D2BBB /* PlaceDetailsViewController.swift */; };
+		281AE6102362F95D003D2BBB /* AddOrUpdateNewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE60F2362F95D003D2BBB /* AddOrUpdateNewPlaceViewController.swift */; };
+		281AE6122362F990003D2BBB /* ChangeLocationOnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE6112362F990003D2BBB /* ChangeLocationOnMapViewController.swift */; };
+		281AE614236315BC003D2BBB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE613236315BC003D2BBB /* LocationManager.swift */; };
+		281AE616236320ED003D2BBB /* MapMarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281AE615236320ED003D2BBB /* MapMarkerInfoView.swift */; };
+		281AE618236320FC003D2BBB /* MapMarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 281AE617236320FC003D2BBB /* MapMarkerInfoView.xib */; };
+		282743FC235FF92C002F9A4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282743FB235FF92C002F9A4C /* AppDelegate.swift */; };
+		28274401235FF92C002F9A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 282743FF235FF92C002F9A4C /* Main.storyboard */; };
+		28274403235FF92D002F9A4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28274402235FF92D002F9A4C /* Assets.xcassets */; };
+		28274406235FF92D002F9A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28274404235FF92D002F9A4C /* LaunchScreen.storyboard */; };
+		28274411235FF92D002F9A4C /* Yulu_iOS_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274410235FF92D002F9A4C /* Yulu_iOS_TestTests.swift */; };
+		2827441C235FF92D002F9A4C /* Yulu_iOS_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2827441B235FF92D002F9A4C /* Yulu_iOS_TestUITests.swift */; };
+		2827442F235FF9DE002F9A4C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2827442E235FF9DE002F9A4C /* Config.swift */; };
+		28274431235FFA28002F9A4C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274430235FFA28002F9A4C /* Extensions.swift */; };
+		28274433235FFA64002F9A4C /* ApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274432235FFA64002F9A4C /* ApplicationManager.swift */; };
+		28274437235FFABE002F9A4C /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274436235FFABE002F9A4C /* Control.swift */; };
+		2827443B235FFB1E002F9A4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2827443D235FFB1E002F9A4C /* Localizable.strings */; };
+		28274441235FFB93002F9A4C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274440235FFB93002F9A4C /* BaseViewController.swift */; };
+		28274443235FFBC5002F9A4C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274442235FFBC5002F9A4C /* RootViewController.swift */; };
+		28274445235FFE0A002F9A4C /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274444235FFE0A002F9A4C /* Storyboards.swift */; };
+		28274448236000CB002F9A4C /* MyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28274447236000CB002F9A4C /* MyPlacesViewController.swift */; };
+		2827444A2360BE1A002F9A4C /* ControlPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282744492360BE1A002F9A4C /* ControlPlaces.swift */; };
+		513CB11046EA8B6F7E57F244 /* Pods_Yulu_iOS_TestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8161E194C423DD5BC713F1D7 /* Pods_Yulu_iOS_TestUITests.framework */; };
+		C8B02F3C0F6269F79B97B8F6 /* Pods_Yulu_iOS_TestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8C00B49C066CE67AC83DE8 /* Pods_Yulu_iOS_TestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2827440D235FF92D002F9A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 282743F0235FF92C002F9A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282743F7235FF92C002F9A4C;
+			remoteInfo = "Yulu-iOS-Test";
+		};
+		28274418235FF92D002F9A4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 282743F0235FF92C002F9A4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 282743F7235FF92C002F9A4C;
+			remoteInfo = "Yulu-iOS-Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0856D52B0B392A6D43BA8815 /* Pods_Yulu_iOS_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yulu_iOS_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		281AE60723619BC1003D2BBB /* PlaceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceInfo.swift; sourceTree = "<group>"; };
+		281AE6092362F1CC003D2BBB /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		281AE60B2362F759003D2BBB /* PlacesOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesOnMapViewController.swift; sourceTree = "<group>"; };
+		281AE60D2362F92F003D2BBB /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		281AE60F2362F95D003D2BBB /* AddOrUpdateNewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrUpdateNewPlaceViewController.swift; sourceTree = "<group>"; };
+		281AE6112362F990003D2BBB /* ChangeLocationOnMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLocationOnMapViewController.swift; sourceTree = "<group>"; };
+		281AE613236315BC003D2BBB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		281AE615236320ED003D2BBB /* MapMarkerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMarkerInfoView.swift; sourceTree = "<group>"; };
+		281AE617236320FC003D2BBB /* MapMarkerInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapMarkerInfoView.xib; sourceTree = "<group>"; };
+		282743F8235FF92C002F9A4C /* Yulu-iOS-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yulu-iOS-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		282743FB235FF92C002F9A4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28274400235FF92C002F9A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28274402235FF92D002F9A4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28274405235FF92D002F9A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28274407235FF92D002F9A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2827440C235FF92D002F9A4C /* Yulu-iOS-TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yulu-iOS-TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28274410235FF92D002F9A4C /* Yulu_iOS_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yulu_iOS_TestTests.swift; sourceTree = "<group>"; };
+		28274412235FF92D002F9A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28274417235FF92D002F9A4C /* Yulu-iOS-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yulu-iOS-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2827441B235FF92D002F9A4C /* Yulu_iOS_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yulu_iOS_TestUITests.swift; sourceTree = "<group>"; };
+		2827441D235FF92D002F9A4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2827442E235FF9DE002F9A4C /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		28274430235FFA28002F9A4C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		28274432235FFA64002F9A4C /* ApplicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationManager.swift; sourceTree = "<group>"; };
+		28274436235FFABE002F9A4C /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		2827443C235FFB1E002F9A4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		28274440235FFB93002F9A4C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		28274442235FFBC5002F9A4C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		28274444235FFE0A002F9A4C /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		28274447236000CB002F9A4C /* MyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewController.swift; sourceTree = "<group>"; };
+		282744492360BE1A002F9A4C /* ControlPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPlaces.swift; sourceTree = "<group>"; };
+		5F70F8DC581043C43AAC417E /* Pods-Yulu-iOS-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test.release.xcconfig"; sourceTree = "<group>"; };
+		66A3F2C259F6BB350D590EB5 /* Pods-Yulu-iOS-TestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-TestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-TestTests/Pods-Yulu-iOS-TestTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B57C5EA10B4E2B1FC14A415 /* Pods-Yulu-iOS-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test.debug.xcconfig"; sourceTree = "<group>"; };
+		773BEA31B997EC254B3ED9CF /* Pods-Yulu-iOS-TestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-TestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-TestUITests/Pods-Yulu-iOS-TestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7AF17C4159A8B10AF5393314 /* Pods-Yulu-iOS-TestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-TestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-TestUITests/Pods-Yulu-iOS-TestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8161E194C423DD5BC713F1D7 /* Pods_Yulu_iOS_TestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yulu_iOS_TestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F1C073A7D48F787BDEDC707 /* Pods-Yulu-iOS-TestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yulu-iOS-TestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yulu-iOS-TestTests/Pods-Yulu-iOS-TestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA8C00B49C066CE67AC83DE8 /* Pods_Yulu_iOS_TestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yulu_iOS_TestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		282743F5235FF92C002F9A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220D802C35F5D60BE24CEE8A /* Pods_Yulu_iOS_Test.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28274409235FF92D002F9A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8B02F3C0F6269F79B97B8F6 /* Pods_Yulu_iOS_TestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28274414235FF92D002F9A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				513CB11046EA8B6F7E57F244 /* Pods_Yulu_iOS_TestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC857576A66A2F85C6EB610 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B57C5EA10B4E2B1FC14A415 /* Pods-Yulu-iOS-Test.debug.xcconfig */,
+				5F70F8DC581043C43AAC417E /* Pods-Yulu-iOS-Test.release.xcconfig */,
+				8F1C073A7D48F787BDEDC707 /* Pods-Yulu-iOS-TestTests.debug.xcconfig */,
+				66A3F2C259F6BB350D590EB5 /* Pods-Yulu-iOS-TestTests.release.xcconfig */,
+				773BEA31B997EC254B3ED9CF /* Pods-Yulu-iOS-TestUITests.debug.xcconfig */,
+				7AF17C4159A8B10AF5393314 /* Pods-Yulu-iOS-TestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		282743EF235FF92C002F9A4C = {
+			isa = PBXGroup;
+			children = (
+				282743FA235FF92C002F9A4C /* Yulu-iOS-Test */,
+				2827440F235FF92D002F9A4C /* Yulu-iOS-TestTests */,
+				2827441A235FF92D002F9A4C /* Yulu-iOS-TestUITests */,
+				282743F9235FF92C002F9A4C /* Products */,
+				0AC857576A66A2F85C6EB610 /* Pods */,
+				3F9AC7C565505862DB092013 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		282743F9235FF92C002F9A4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				282743F8235FF92C002F9A4C /* Yulu-iOS-Test.app */,
+				2827440C235FF92D002F9A4C /* Yulu-iOS-TestTests.xctest */,
+				28274417235FF92D002F9A4C /* Yulu-iOS-TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		282743FA235FF92C002F9A4C /* Yulu-iOS-Test */ = {
+			isa = PBXGroup;
+			children = (
+				2827442D235FF9B8002F9A4C /* Common */,
+				2827442C235FF9B2002F9A4C /* Core */,
+				2827442B235FF9A6002F9A4C /* Root */,
+				2827442A235FF999002F9A4C /* Resources */,
+				28274429235FF986002F9A4C /* UI */,
+			);
+			path = "Yulu-iOS-Test";
+			sourceTree = "<group>";
+		};
+		2827440F235FF92D002F9A4C /* Yulu-iOS-TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				28274410235FF92D002F9A4C /* Yulu_iOS_TestTests.swift */,
+				28274412235FF92D002F9A4C /* Info.plist */,
+			);
+			path = "Yulu-iOS-TestTests";
+			sourceTree = "<group>";
+		};
+		2827441A235FF92D002F9A4C /* Yulu-iOS-TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2827441B235FF92D002F9A4C /* Yulu_iOS_TestUITests.swift */,
+				2827441D235FF92D002F9A4C /* Info.plist */,
+			);
+			path = "Yulu-iOS-TestUITests";
+			sourceTree = "<group>";
+		};
+		28274429235FF986002F9A4C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28274446236000B3002F9A4C /* Place Related */,
+				2827443F235FFB5C002F9A4C /* Launch Screen */,
+				2827443E235FFB48002F9A4C /* General */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2827442A235FF999002F9A4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28274438235FFB03002F9A4C /* Localization */,
+				281AE6092362F1CC003D2BBB /* Images.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2827442B235FF9A6002F9A4C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				282743FB235FF92C002F9A4C /* AppDelegate.swift */,
+				28274402235FF92D002F9A4C /* Assets.xcassets */,
+				28274407235FF92D002F9A4C /* Info.plist */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		2827442C235FF9B2002F9A4C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				28274435235FFAA5002F9A4C /* Model */,
+				28274434235FFA9C002F9A4C /* Control */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2827442D235FF9B8002F9A4C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2827442E235FF9DE002F9A4C /* Config.swift */,
+				28274430235FFA28002F9A4C /* Extensions.swift */,
+				28274432235FFA64002F9A4C /* ApplicationManager.swift */,
+				281AE613236315BC003D2BBB /* LocationManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		28274434235FFA9C002F9A4C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				28274436235FFABE002F9A4C /* Control.swift */,
+				282744492360BE1A002F9A4C /* ControlPlaces.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		28274435235FFAA5002F9A4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				281AE60723619BC1003D2BBB /* PlaceInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28274438235FFB03002F9A4C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				2827443D235FFB1E002F9A4C /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		2827443E235FFB48002F9A4C /* General */ = {
+			isa = PBXGroup;
+			children = (
+				282743FF235FF92C002F9A4C /* Main.storyboard */,
+				28274440235FFB93002F9A4C /* BaseViewController.swift */,
+				28274442235FFBC5002F9A4C /* RootViewController.swift */,
+				28274444235FFE0A002F9A4C /* Storyboards.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		2827443F235FFB5C002F9A4C /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				28274404235FF92D002F9A4C /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		28274446236000B3002F9A4C /* Place Related */ = {
+			isa = PBXGroup;
+			children = (
+				28274447236000CB002F9A4C /* MyPlacesViewController.swift */,
+				281AE60B2362F759003D2BBB /* PlacesOnMapViewController.swift */,
+				281AE60D2362F92F003D2BBB /* PlaceDetailsViewController.swift */,
+				281AE60F2362F95D003D2BBB /* AddOrUpdateNewPlaceViewController.swift */,
+				281AE6112362F990003D2BBB /* ChangeLocationOnMapViewController.swift */,
+				281AE617236320FC003D2BBB /* MapMarkerInfoView.xib */,
+				281AE615236320ED003D2BBB /* MapMarkerInfoView.swift */,
+			);
+			path = "Place Related";
+			sourceTree = "<group>";
+		};
+		3F9AC7C565505862DB092013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0856D52B0B392A6D43BA8815 /* Pods_Yulu_iOS_Test.framework */,
+				BA8C00B49C066CE67AC83DE8 /* Pods_Yulu_iOS_TestTests.framework */,
+				8161E194C423DD5BC713F1D7 /* Pods_Yulu_iOS_TestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		282743F7235FF92C002F9A4C /* Yulu-iOS-Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28274420235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-Test" */;
+			buildPhases = (
+				55C284597323F77C3C13A512 /* [CP] Check Pods Manifest.lock */,
+				282743F4235FF92C002F9A4C /* Sources */,
+				282743F5235FF92C002F9A4C /* Frameworks */,
+				282743F6235FF92C002F9A4C /* Resources */,
+				9539C580C268AA55D378346B /* [CP] Embed Pods Frameworks */,
+				9980618BDC7EF9A6F6085484 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yulu-iOS-Test";
+			productName = "Yulu-iOS-Test";
+			productReference = 282743F8235FF92C002F9A4C /* Yulu-iOS-Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2827440B235FF92D002F9A4C /* Yulu-iOS-TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28274423235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-TestTests" */;
+			buildPhases = (
+				BD30BE31849853B32C9A0785 /* [CP] Check Pods Manifest.lock */,
+				28274408235FF92D002F9A4C /* Sources */,
+				28274409235FF92D002F9A4C /* Frameworks */,
+				2827440A235FF92D002F9A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2827440E235FF92D002F9A4C /* PBXTargetDependency */,
+			);
+			name = "Yulu-iOS-TestTests";
+			productName = "Yulu-iOS-TestTests";
+			productReference = 2827440C235FF92D002F9A4C /* Yulu-iOS-TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28274416235FF92D002F9A4C /* Yulu-iOS-TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28274426235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-TestUITests" */;
+			buildPhases = (
+				6927CEF9A21CC7FEA1E73B39 /* [CP] Check Pods Manifest.lock */,
+				28274413235FF92D002F9A4C /* Sources */,
+				28274414235FF92D002F9A4C /* Frameworks */,
+				28274415235FF92D002F9A4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28274419235FF92D002F9A4C /* PBXTargetDependency */,
+			);
+			name = "Yulu-iOS-TestUITests";
+			productName = "Yulu-iOS-TestUITests";
+			productReference = 28274417235FF92D002F9A4C /* Yulu-iOS-TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		282743F0235FF92C002F9A4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Praveen;
+				TargetAttributes = {
+					282743F7235FF92C002F9A4C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2827440B235FF92D002F9A4C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 282743F7235FF92C002F9A4C;
+					};
+					28274416235FF92D002F9A4C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 282743F7235FF92C002F9A4C;
+					};
+				};
+			};
+			buildConfigurationList = 282743F3235FF92C002F9A4C /* Build configuration list for PBXProject "Yulu-iOS-Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 282743EF235FF92C002F9A4C;
+			productRefGroup = 282743F9235FF92C002F9A4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				282743F7235FF92C002F9A4C /* Yulu-iOS-Test */,
+				2827440B235FF92D002F9A4C /* Yulu-iOS-TestTests */,
+				28274416235FF92D002F9A4C /* Yulu-iOS-TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		282743F6235FF92C002F9A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28274406235FF92D002F9A4C /* LaunchScreen.storyboard in Resources */,
+				2827443B235FFB1E002F9A4C /* Localizable.strings in Resources */,
+				281AE618236320FC003D2BBB /* MapMarkerInfoView.xib in Resources */,
+				28274403235FF92D002F9A4C /* Assets.xcassets in Resources */,
+				28274401235FF92C002F9A4C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2827440A235FF92D002F9A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28274415235FF92D002F9A4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55C284597323F77C3C13A512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yulu-iOS-Test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6927CEF9A21CC7FEA1E73B39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yulu-iOS-TestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9539C580C268AA55D378346B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9980618BDC7EF9A6F6085484 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yulu-iOS-Test/Pods-Yulu-iOS-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD30BE31849853B32C9A0785 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yulu-iOS-TestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		282743F4235FF92C002F9A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282743FC235FF92C002F9A4C /* AppDelegate.swift in Sources */,
+				281AE614236315BC003D2BBB /* LocationManager.swift in Sources */,
+				281AE60A2362F1CC003D2BBB /* Images.swift in Sources */,
+				281AE60E2362F92F003D2BBB /* PlaceDetailsViewController.swift in Sources */,
+				28274448236000CB002F9A4C /* MyPlacesViewController.swift in Sources */,
+				28274433235FFA64002F9A4C /* ApplicationManager.swift in Sources */,
+				281AE60C2362F759003D2BBB /* PlacesOnMapViewController.swift in Sources */,
+				2827444A2360BE1A002F9A4C /* ControlPlaces.swift in Sources */,
+				2827442F235FF9DE002F9A4C /* Config.swift in Sources */,
+				281AE616236320ED003D2BBB /* MapMarkerInfoView.swift in Sources */,
+				28274431235FFA28002F9A4C /* Extensions.swift in Sources */,
+				28274441235FFB93002F9A4C /* BaseViewController.swift in Sources */,
+				28274445235FFE0A002F9A4C /* Storyboards.swift in Sources */,
+				281AE6122362F990003D2BBB /* ChangeLocationOnMapViewController.swift in Sources */,
+				28274443235FFBC5002F9A4C /* RootViewController.swift in Sources */,
+				281AE6102362F95D003D2BBB /* AddOrUpdateNewPlaceViewController.swift in Sources */,
+				28274437235FFABE002F9A4C /* Control.swift in Sources */,
+				281AE60823619BC1003D2BBB /* PlaceInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28274408235FF92D002F9A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28274411235FF92D002F9A4C /* Yulu_iOS_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28274413235FF92D002F9A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2827441C235FF92D002F9A4C /* Yulu_iOS_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2827440E235FF92D002F9A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282743F7235FF92C002F9A4C /* Yulu-iOS-Test */;
+			targetProxy = 2827440D235FF92D002F9A4C /* PBXContainerItemProxy */;
+		};
+		28274419235FF92D002F9A4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 282743F7235FF92C002F9A4C /* Yulu-iOS-Test */;
+			targetProxy = 28274418235FF92D002F9A4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		282743FF235FF92C002F9A4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28274400235FF92C002F9A4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28274404235FF92D002F9A4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28274405235FF92D002F9A4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2827443D235FFB1E002F9A4C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2827443C235FFB1E002F9A4C /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2827441E235FF92D002F9A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2827441F235FF92D002F9A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28274421235FF92D002F9A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B57C5EA10B4E2B1FC14A415 /* Pods-Yulu-iOS-Test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Yulu-iOS-Test/Root/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28274422235FF92D002F9A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F70F8DC581043C43AAC417E /* Pods-Yulu-iOS-Test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Yulu-iOS-Test/Root/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28274424235FF92D002F9A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1C073A7D48F787BDEDC707 /* Pods-Yulu-iOS-TestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Yulu-iOS-TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yulu-iOS-Test.app/Yulu-iOS-Test";
+			};
+			name = Debug;
+		};
+		28274425235FF92D002F9A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A3F2C259F6BB350D590EB5 /* Pods-Yulu-iOS-TestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Yulu-iOS-TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yulu-iOS-Test.app/Yulu-iOS-Test";
+			};
+			name = Release;
+		};
+		28274427235FF92D002F9A4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 773BEA31B997EC254B3ED9CF /* Pods-Yulu-iOS-TestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Yulu-iOS-TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yulu-iOS-Test";
+			};
+			name = Debug;
+		};
+		28274428235FF92D002F9A4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF17C4159A8B10AF5393314 /* Pods-Yulu-iOS-TestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Yulu-iOS-TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.praveen.Yulu-iOS-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yulu-iOS-Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		282743F3235FF92C002F9A4C /* Build configuration list for PBXProject "Yulu-iOS-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2827441E235FF92D002F9A4C /* Debug */,
+				2827441F235FF92D002F9A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28274420235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28274421235FF92D002F9A4C /* Debug */,
+				28274422235FF92D002F9A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28274423235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28274424235FF92D002F9A4C /* Debug */,
+				28274425235FF92D002F9A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28274426235FF92D002F9A4C /* Build configuration list for PBXNativeTarget "Yulu-iOS-TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28274427235FF92D002F9A4C /* Debug */,
+				28274428235FF92D002F9A4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 282743F0235FF92C002F9A4C /* Project object */;
+}

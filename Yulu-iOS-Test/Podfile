@@ -1,0 +1,27 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target 'Yulu-iOS-Test' do
+
+  # Pods for Yulu-iOS-Test
+  pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireObjectMapper', '~> 5.0.0'
+  pod 'ObjectMapper', '~> 3.2'
+  pod 'Kingfisher', '~> 4.9.0'
+  pod 'JGProgressHUD'
+  pod 'SwiftGen'
+  pod 'GoogleMaps'
+  pod 'IQKeyboardManagerSwift', '~> 6.0.4'
+  pod 'SwiftLocation', '~> 3.2.3'
+
+  target 'Yulu-iOS-TestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Yulu-iOS-TestUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
